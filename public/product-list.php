@@ -111,7 +111,7 @@ if(isset($_GET['sub_cat_id'])){
                                     : "SELECT * FROM products WHERE sub_cat_id = $sub_id  LIMIT $offset, $no_of_records_per_page";
                             }else{
                                 $query= $search ? "SELECT * FROM products WHERE product_name LIKE '%$search%' 
-                                LIMIT $offset, $no_of_records_per_page" : "SELECT * FROM products  LIMIT $offset, $no_of_records_per_page";
+                                LIMIT $offset, $no_of_records_per_page" : "SELECT * FROM products LIMIT $offset, $no_of_records_per_page";
                             }
                             $result=mysqli_query($conn,$query);
                             while($row=mysqli_fetch_assoc($result)){

@@ -95,7 +95,7 @@
                                                </div>
                                               <div class='product-price' style=' position:relative; '>
                                              <h3><span>JD</span> ".$after_discount_total." </h3><span style = 'text-decoration:line-through; color:#a5a5a7;'><span>JD</span> ".$row['product_price']."</span>
-                                              <a class='btn' href='' style=' position:absolute; bottom:9%; right: 3%; '><i class='fa fa-shopping-cart'></i>Buy Now</a>
+                                              <a class='btn' href='add_to_cart.php?id=".$row["product_id"]."&price=".$after_discount_total."' style=' position:absolute; bottom:9%; right: 3%; '><i class='fa fa-shopping-cart'></i>Buy Now</a>
                                                </div>
                                            </div>
                                        </div>";
@@ -120,7 +120,7 @@
                                                </div>
                                               <div class='product-price' style=' position:relative; '>
                                              <h3><span>JD</span> ".$after_discount_total." </h3>
-                                              <a class='btn' href='' style=' position:absolute; bottom:9%; right: 3%; '><i class='fa fa-shopping-cart'></i>Buy Now</a>
+                                              <a class='btn' href='add_to_cart.php?id=".$row["product_id"]."&price=".$after_discount_total."' style=' position:absolute; bottom:9%; right: 3%; '><i class='fa fa-shopping-cart'></i>Buy Now</a>
                                                </div>
                                            </div>
                                        </div>";

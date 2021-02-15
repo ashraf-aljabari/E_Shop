@@ -20,7 +20,7 @@ include "includes/db_connection.php";
                                 </thead>
                                 <tbody>
                                 <?php
-                                $query = "select * from product_review INNER JOIN products ON product_review.product_id = products.product_id";
+                                $query = "select * from product_review INNER JOIN products ON product_review.product_id = products.product_id WHERE user_id=".$_SESSION['user_id']."";
                                 /** @var TYPE_NAME $conn */
                                 $result = mysqli_query($conn, $query);
                                 while ($row = mysqli_fetch_assoc($result)) {

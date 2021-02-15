@@ -27,7 +27,7 @@
 				}
 				
                 unset($_SESSION["order_products"]);
-			header("location:index.php");
+			    header("location:msg.php");
                 
 			}
 		}
